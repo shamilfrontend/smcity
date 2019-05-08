@@ -1,0 +1,59 @@
+
+//
+
+
+textarea, input{
+  display: block;
+  padding-left: 10px;
+  &:focus{
+    outline: none;
+  }
+}
+
+.border-radius-photo(@width: 60px, @height: 60px, @borrad: 50%){
+  width: @width;
+  height: @height;
+  border-radius: @borrad;
+}
+
+.myBtn(@fz: 16px, @pad: 8px 20px, @bgc: @sitecolor, @bsh: @sitecolor, @color: #ffffff, @bdrad: 5px){
+  font-size: @fz;
+  padding: @pad;
+  text-decoration: none;
+  background: @bgc;
+  color: @color;
+  border-radius: @bdrad;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+  background-clip: padding-box;
+  border: 0 none;
+  box-shadow: 0 4px 0 0 @bsh;
+  text-align: center;
+  transition: 0.2s;
+  position: relative;
+  top: 0;
+  &:hover{}
+  &:active{
+    border-width: 0;
+    top: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 @bsh;
+  }
+}
+
+// user mixs
+
+.pc-user-name(){
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: @sitecolor;
+}
+
+.pc-user-text(){
+  color: #000;
+  line-height: 20px;
+  padding: 0 70px 7px 70px;
+}
+

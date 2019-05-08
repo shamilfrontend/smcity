@@ -1,0 +1,112 @@
+
+.pagesidebar{
+  height: 100vh;
+  position: fixed;
+  background-color: #F5F5F5;
+  width: 300px;
+  display: block;
+  @media (min-width: 992px) {
+    z-index: 1;
+  }
+  @media (max-width: 991px) {
+    display: none;
+    z-index: 1;
+  }
+  .ps-profile{
+    padding: 15px;
+    .ps-profile__link{
+      display: table-row;
+      text-decoration: none;
+      color: #333;
+      .ps-profile__img{
+        .border-radius-photo(64px, 64px);
+        display: table-cell;
+        vertical-align: middle;
+        overflow: hidden;
+        margin-right: 10px;
+      }
+      .ps-profile__fio{
+        vertical-align: middle;
+        display: table-cell;
+        font-size: 16px;
+      }
+    }
+  }
+  .ps-profilemenu{
+    .ps-profilemenu__list{
+      .ps-profilemenu__title{
+        .ps-profilemenu__link{
+          text-decoration: none;
+          color: @sLinkColor;
+          display: block;
+          padding: 13px 9px 13px 50px;
+          border-top: 1px solid #e7e7e7;
+          border-bottom: 1px solid #e7e7e7;
+          background-repeat: no-repeat;
+          background-color: #F5F5F5;
+          &:hover{
+            background-color: #fafafa;
+            border-bottom: 1px solid #e7e7e7;
+          }
+          i{
+            text-align: center;
+            width: 30px;
+          }
+        }
+        .ps-profilemenu__link_friend{
+          background-image: url('../img/icons/icon-friends.png');
+          background-repeat: no-repeat;
+          background-position: 15px center;
+        }
+        .ps-profilemenu__link_sms{
+          background-image: url('../img/icons/icon-mail.png');
+          background-repeat: no-repeat;
+          background-position: 15px center;
+        }
+        .ps-profilemenu__link_konkurs{
+          background-image: url('../img/icons/icon-konkurs.png');
+          background-repeat: no-repeat;
+          background-position: 15px center;
+        }
+        .ps-profilemenu__link_ask{
+          background-image: url('../img/icons/icon-sprash.png');
+          background-repeat: no-repeat;
+          background-position: 15px center;
+        }
+        .ps-profilemenu__link_vchat{
+          background-image: url('../img/icons/icon-videochat.png');
+          background-repeat: no-repeat;
+          background-position: 15px center;
+        }
+        .ps-profilemenu__link_support{
+          background-image: url('../img/icons/icon-help.png');
+          background-repeat: no-repeat;
+          background-position: 15px center;
+        }
+        .ps-profilemenu__link_tools{
+          background-image: url('../img/icons/icon-tools.png');
+          background-repeat: no-repeat;
+          background-position: 15px center;
+        }
+        .ps-profilemenu__link_logout{
+          background-image: url('../img/icons/icon-exit.png');
+          background-repeat: no-repeat;
+          background-position: 15px center;
+        }
+      }
+    }
+  }
+  .pagesidebar__title{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .ps-profilemenu_setting{
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    .ps-profilemenu__link{
+      &:last-child{}
+    }
+  }
+}

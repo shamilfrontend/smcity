@@ -1,0 +1,19 @@
+@import "reset";
+//@import "grid";
+@import "fonts";
+@import "mixins";
+@import "pagesidebar";
+
+@import "index";
+
+body{
+  background-color: #F5F5F5;
+  font-family: "HelveticaRegular", 'Arial', sans-serif;
+  .container{
+    width: 1140px;
+    margin: 0 auto;
+    @media (max-width: 1150px) {
+      width: 98%;
+    }
+  }
+}
